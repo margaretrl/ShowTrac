@@ -1,0 +1,9 @@
+__pycache__
+.vscode
+showtracENV
+showtrac.sock
+wsgi.py
+.DS_Store
+venv/
+flask_session/
+helper.txt

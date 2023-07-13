@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Become a Premium User</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			font-size: 36px;
+			margin-top: 50px;
+			margin-bottom: 30px;
+			text-align: center;
+		}
+		form {
+			margin: 0 auto;
+			width: 500px;
+			padding: 20px;
+			border: 2px solid #ccc;
+			border-radius: 5px;
+		}
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		input[type=text], input[type=password] {
+			display: block;
+			margin-bottom: 20px;
+			padding: 10px;
+			width: 100%;
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+		button[type=submit] {
+			background-color: #8B0000;
+			color: white;
+			padding: 12px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			width: 100%;
+		}
+		button[type=submit]:hover {
+			background-color: #8B0000;
+		}
+	</style>
+</head>
+<body>
+	<h1>Become a Premium User</h1>
+	<form action="/app/makePremium" method="post">
+		<label for="name">Email:</label>
+		<input type="text" id="email" name="email" required>
+
+		<label for="email">Password:</label>
+		<input type="text" id="password" name="password" required>
+
+		<label for="card">Credit Card Number:</label>
+		<input type="password" id="card" name="card" required>
+
+		<label for="exp">Expiration Date:</label>
+		<input type="text" id="exp" name="exp" placeholder="MM/YY" required>
+
+		<button type="submit" >Upgrade to Premium </button>
+	</form>
+</body>
+</html>
